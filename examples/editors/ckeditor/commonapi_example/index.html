@@ -6,11 +6,13 @@
 <script src="../../../../examples/plugins/commonapi_example/commonapi_example.js" type="text/javascript"></script>
 </head>
 <body>
-<textarea id="editor1"></textarea>
+<textarea id="editor1">
+<img src="/wysiwyg-plugin/examples/plugins/commonapi_example/img/example.gif" />
+</textarea>
 <script type="text/javascript">
 CKEDITOR.replace( 'editor1',
     {
-        extraPlugins : 'iframedialog,commonapi_example',
+        extraPlugins : 'onchange,iframedialog,commonapi_example',
         toolbar :
         [
             [ 'example_button' ]
