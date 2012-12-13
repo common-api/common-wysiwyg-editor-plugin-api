@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Example Plugin using TinyMCE</title>
+<script src="../../../../3rd-party/tinymce/jscripts/tiny_mce/tiny_mce_src.js" type="text/javascript"></script>
+<script src="../../../../lib/commonapi.js" type="text/javascript"></script>
+<script src="../../../../lib/commonapi.tinymce.js" type="text/javascript"></script>
+<script src="../../../plugins/commonapi_example/commonapi_example.js" type="text/javascript"></script>
+<script type="text/javascript">
+tinyMCE.init({
+    // General options
+    mode : "textareas",
+    theme : "advanced",
+    plugins : "commonapi_example",
+    theme_advanced_buttons1 : "example_button,help",
+});
+</script>
+</head>
+<body>
+<textarea name="editor1"></textarea>
+</body>
+</html>
